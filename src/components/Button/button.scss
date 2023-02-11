@@ -1,0 +1,36 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+
+  &__blue-rounded {
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 113, 235);
+    border: 2px solid rgb(0, 113, 235);
+    border-radius: 8px;
+  }
+
+  &__green-rounded {
+    @extend .btn__blue-rounded;
+    background: rgb(43, 192, 17);
+    border: 2px solid rgb(43, 192, 17);
+  }
+
+  &__home {
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  &__close {
+    @extend .btn__blue-rounded;
+    background: rgb(233, 2, 2);
+    border: 2px solid rgb(233, 2, 2);
+  }
+}

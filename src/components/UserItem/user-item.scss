@@ -1,0 +1,25 @@
+.item-container {
+  background-color: rgba(135, 170, 192, 0.68);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  flex: 1 1 21rem;
+}
+
+.item {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.item-name {
+  color: navy;
+}
+
+.item-btn {
+  display: flex;
+  gap: 2rem;
+}
