@@ -20,7 +20,7 @@ const PostsList: FC = () => {
     return (
         <div className='posts-container'>
             {posts.map(post => (
-                <div className='post-box'>
+                <div key={post.id}  className='post-box'>
                     <span className='post-item'><span className='post-name'>Title:</span> {post.title}</span>
                     <span className='post-item'><span className='post-name'>Body:</span> {post.body}</span>
                 </div>
