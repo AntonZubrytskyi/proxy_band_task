@@ -7,9 +7,6 @@ const Navbar: FC = () => {
     return (
         <div className='nav-container'>
             <span className='nav-title'>USERS BLOG</span>
-            <Link to='/'>
-                <Button styleClass='btn__home'>Home</Button>
-            </Link>
             <Link to='/users'>
                 <Button styleClass='btn__home'>Users</Button>
             </Link>
