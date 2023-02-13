@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
-import './App.css';
-import {Route, Routes} from "react-router-dom";
+import './App.scss';
+import {Navigate, Route, Routes} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import UsersPage from "./pages/UsersPage/UsersPage";
 import UserPostsPage from "./pages/UserPostsPage/UserPostsPage";
@@ -13,6 +13,7 @@ const App: FC = () => {
         <>
             <Routes>
                 <Route path='/' element={<MainLayout/>}>
+                    <Route index element={<Navigate to={'users'}/>}/>
                     <Route path='users' element={<UsersPage/>}/>
                     <Route path='users/:id/posts' element={<UserPostsPage/>}/>
                     <Route path={'*'} element={<NotFoundPage/>}/>
